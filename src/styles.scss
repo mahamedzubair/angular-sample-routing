@@ -1,0 +1,320 @@
+/* You can add global styles to this file, and also import other style files */
+ .container{
+  padding:0 100px;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #272626;
+  padding: 15px;
+
+}
+
+.header-content{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-content strong{
+  font-size: 20px;
+}
+
+.header-content p{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+/*hovering*/
+.hover:hover{
+  border: 1px solid grey;
+}
+.hover1:hover{
+  background-color: lightgrey;
+}
+/*select check boxes*/
+.form{
+  position: relative;
+    top: -28px;
+    left: 110px;
+}
+.cancel_apply{
+  display: flex;
+}
+.cancel_apply div{
+  flex: 1;
+  text-align: center;
+  background-color:white;
+  margin-right: 55px;
+  font-size: 12px;
+  display: inline-block;
+}
+.multiselect {
+  width: 180px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+   position: absolute;
+    width: 187px;
+    background-color: white;
+}
+#checkboxes1 {
+  display: none;
+  border: 1px #dadada solid;
+   position: absolute;
+    width: 190px;
+    background-color: white;
+}
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+#checkboxes1 label {
+  display: block;
+}
+
+#checkboxes1 label:hover {
+  background-color: #1e90ff;
+}
+/*option selector part*/
+
+.option-selector div{
+  padding: 5px;
+}
+.option-selector select{
+  width: 190px;
+}
+
+@media screen and (min-width: 768px){
+  .option-selector{
+  }
+  .option-selector div{
+  }
+}
+/*vendor and users*/
+
+.user-vendor-container{
+  padding-top: 30px;
+}
+
+.users-vendor{
+  display: flex;
+}
+
+.users-vendor div{
+  padding: 10px;
+}
+
+.fa-users{
+  font-size: 50px;
+}
+
+.fa-times{
+  font-size: 50px;
+  color: red;
+}
+
+.fa-check{
+  font-size: 50px;
+  color: green;
+}
+
+/*.bg{
+  background-color: aqua;
+  width: 18vw;
+}*/
+
+@media screen and (min-width: 768px){
+  .user-vendor-container{
+    display: flex;
+  }
+  
+  .user-vendor-container section{
+    flex: auto;
+  } 
+}
+.border{
+  width: 400px;
+}
+.bordering{
+  border: 1px solid;
+}
+
+/*group icon*/
+
+.group-icon-container{
+  padding: 30px;
+}
+
+.round-border{
+  border-radius: 50%;
+  border: 2px solid  #68B9E8; 
+  padding: 20px;
+  min-width: 80px;
+  text-align: center;
+  margin-right:30px;
+  margin-bottom: 10px;
+}
+.round-border:hover{
+  border:3px solid grey;
+  border-radius: 50%;
+}
+
+.text{
+  font-size: 30px;
+}
+
+.fa-chart-line{
+  color:#68B9E8;
+}
+
+.fa-map-marker-alt{
+  color: red;
+}
+
+.fa-user-alt{
+  color:#68B9E8;  
+}
+
+.fa-dollar-sign{
+  color: green;
+}
+
+.fa-map-marked-alt{
+  color: red;
+}
+
+.fa-address-book{
+  color: #68b9e8;
+}
+
+.fa-sitemap{
+  color: yellow;
+}
+
+@media screen and (min-width: 576px){
+  .group-icon-container{
+    display: flex;
+    /*flex-wrap: wrap;*/
+  }
+
+  .group-icon-container div{
+    flex: 1;
+  }
+}
+/*metric part*/
+.metricDrop{
+  display: none;
+}
+.details{
+  display: flex;
+  padding: 0px;
+}
+
+.graph-container >div:nth-child(2n){
+  background-color: #f9f9f9;
+}
+
+.heading{
+  text-transform: uppercase;
+  padding: 30px;
+  text-align: center;
+  width: 10vw;
+  border-right:1px solid #817D7D;
+}
+
+.graph-percentage{
+  padding: 30px;
+  text-align: center;
+}
+
+.graph-percentage label{
+  padding: 10px;
+}
+
+.red-graph{
+  display: inline-block;
+  padding: 15px;
+  background-color: red;
+}
+
+.yellow-graph{
+  display: inline-block;
+  padding: 15px;
+  background-color: yellow;
+}
+.categories{
+  width: 90px;
+}
+.daterangepicker.show-calendar .drp-buttons {
+    display: block;
+}
+.daterangepicker .drp-buttons {
+    clear: both;
+    text-align: right;
+    padding: 8px;
+    border-top: 1px solid #ddd;
+    line-height: 12px;
+    vertical-align: middle;
+}
+.types{
+  width:120px;
+}
+.kiran2 {
+  width:180px;
+}
+.Task{
+  width:120px;
+}   
+table, th, td {
+  border: 4px solid black;
+  border-collapse: collapse;
+  font-family: Arial;
+}
+th, td {
+  padding: 10px;
+  text-align: left;    
+}
+  td{
+    vertical-align: bottom;
+  }
+  .yellow-bg {
+      background-color: yellow
+  }
+  .child-table, .child-table th, .child-table td {
+      border: 0px;
+      margin: 0px;
+      width: 100%;
+  }
+  td.childList {
+      padding: 0px;
+  }
+  .child-table tr {
+      width: 100%;
+
+  }
+  .child-table tr:not(:last-child) {
+      border-bottom: 4px solid black;
+  }

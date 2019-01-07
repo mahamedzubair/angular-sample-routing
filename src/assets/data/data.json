@@ -1,0 +1,80 @@
+{
+    "TASK_KPI": [
+        {
+            "TASK": "Create",
+            "TYPES": [
+                {
+                    "APPROVE": {
+                        "4HR": "5",
+                        "48HR": "NA"
+                    }
+                },
+                {
+                    "REJECT": {
+                        "4HR": "5",
+                        "48HR": "NA"
+                    }
+                }
+            ],
+            "SLA_MISSED_NO": "10",
+            "SLA_MISSED_PER": "5"
+        },
+        {
+            "TASK": "Update",
+            "TYPES": [
+                {
+                    "APPROVE": {
+                        "4HR": "5",
+                        "48HR": "NA"
+                    }
+                },
+                {
+                    "REJECT": {
+                        "4HR": "5",
+                        "48HR": "NA"
+                    }
+                }
+            ],
+            "SLA_MISSED_NO": "10",
+            "SLA_MISSED_PER": "5"
+        },
+        {
+            "TASK": "Status Change",
+            "TYPES": [
+                {
+                    "APPROVE": {
+                        "4HR": "5",
+                        "48HR": "NA"
+                    }
+                },
+                {
+                    "REJECT": {
+                        "4HR": "5",
+                        "48HR": "NA"
+                    }
+                }
+            ],
+            "SLA_MISSED_NO": "10",
+            "SLA_MISSED_PER": "5"
+        },
+        {
+            "TASK": "Hierarchy",
+            "TYPES": [
+                {
+                    "APPROVE": {
+                        "4HR": "NA",
+                        "48HR": "10"
+                    }
+                },
+                {
+                    "REJECT": {
+                        "4HR": "NA",
+                        "48HR": "20"
+                    }
+                }
+            ],
+            "SLA_MISSED_NO": "10",
+            "SLA_MISSED_PER": "5"
+        }
+    ]
+}

@@ -1,0 +1,193 @@
+
+<!-- end of header -->
+
+<!-- region and country selector -->
+
+
+
+<!-- end of region and country selector -->
+
+<!-- users and vendor -->
+
+<div class="user-vendor-container container" style="display: flex">
+<section>
+  <div class="users-vendor">
+    <div class="hover">
+      <i class="fas fa-users"></i>
+    </div>
+    <div class="hover border">
+      <div class="bordering">
+        <h2>8,571</h2>
+        <p>Total Customers(UCID &Affinity Account)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="hover" style="width: 100px"></div>
+<section>
+  <div class="users-vendor">
+    <div class="hover">
+    </div>
+  </div>
+</section>
+      <!--      <i class="fas fa-check"></i>   --->
+    </div>
+    <div class="hover border">
+      <div class="bordering">
+        <h2>5,527</h2>
+        <p>Number of UCID</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="users-vendor">
+    <div class="hover">
+      <!--    <i class="fas fa-times"></i>   --->
+    </div>
+    <div class="bg hover border">
+      <div class="bordering">
+        <h2>3,044</h2>
+        <p>3,044 Number of Affinity Accounts</p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- end of users and vendor -->
+
+<!-- group icon -->
+<section class="container">
+  <p class="hover">Click on the Icon to filter by Group : </p>
+  <div class="group-icon-container hover fltrGrp">
+    <figure class="round-border">
+      <i class="fa fa-tasks text"></i>
+      <figcaption>Task</figcaption>
+    </figure>
+    <figure class="round-border">
+      <i class="fas fa-map-marker-alt text"></i>
+      <figcaption>Inprocess-Queue</figcaption>
+    </figure>
+    <figure class="round-border">
+      <i class="fas fa-user-alt text"></i>
+      <figcaption>Imap Portal</figcaption>
+    </figure>
+    <figure class="round-border">
+      <i class="fas fa-user-shield text"></i>
+      <figcaption>Account</figcaption>
+    </figure>
+    <figure class="round-border">
+      <i class="fa fa-id-card text"></i>
+      <figcaption>UCID</figcaption>
+    </figure>
+    <figure class="round-border">
+      <i class="fa fa-server text"></i>
+      <figcaption>JBOSS/JMX</figcaption>
+    </figure>
+  </div>
+</section>
+<section class="container hover">
+  <div id="metricDrop">
+    <label>Select the Metric from Dropdown :</label>
+    <select class="kiran2">
+      <option value="all">(ALL)</option>
+      <option value="ad_delivery">Manual Task in DS Queue</option>
+      <option value="product_delivery">Auto Approved Task by Source</option>
+      <option value="ad_delivery">Manually Approved/Rejected Taks by DS</option>
+      <option value="ad_delivery">linkage in Process(calc_Affinity/Services_Affinity)</option>
+      <option value="ad_delivery">GU & DU changes in process(Relacc_Ultimate)</option>
+      <option value="ad_delivery">APID backlog in the queue-batch only</option>
+      <option value="ad_delivery">Number of searches</option>
+      <option value="ad_delivery">Number of create request by day/month/week</option>
+      <option value="ad_delivery">Number of update request by day/month/week</option>
+      <option value="ad_delivery">Number of Rejects request by day/month/week</option>
+      <option value="ad_delivery">APID by day/month/week-realtime vs batch</option>
+      <option value="ad_delivery">Number of APIDs with site Duns changes</option>
+      <option value="ad_delivery">UCID Creates by source day/month/week</option>
+      <option value="ad_delivery">UCID Rejections by source day/month/week</option>
+      <option value="ad_delivery">UCID Replacements by source day/month/week</option>
+      <option value="ad_delivery">AID processed in iMAP by day/month/week</option>
+      <option value="ad_delivery">% OF Account taht have a UCID linked</option>
+      <option value="ad_delivery">% of UCIDs that are linked to a APID</option>
+      <option value="ad_delivery">Number of UCIDs with GU Changes</option>
+      <option value="ad_delivery">Number of UCIDs with site Duns Changes</option>
+      <option value="ad_delivery">Number of DB Connections</option>
+      <option value="ad_delivery">Number of times idle DB Connections are being Flushed</option>
+      <option value="ad_delivery">Number of EJB Connections</option>
+      </select>
+  </div>
+</section>
+  </div>
+  <table>
+    <col width="500">
+    <col width="500">
+    <col width="500">
+    <col width="500">
+    <col width="500">
+    <tr style="background: yellow">
+<td>TASKS</td>
+<td></td>
+<td>4hr</td>
+<td>48hr</td>
+<td>SLA_MISSED_NO</td>
+<td>SLA_MISSED_PER</td>
+</tr>
+<tr>
+  <td rowspan="2">Create</td>
+  <td>app</td>
+  <td>10</td>
+  <td>NA</td>
+
+  <td rowspan="2">5</td>
+  <td rowspan="2">2</td>
+</tr>
+<tr>
+  <td>rej</td>
+  <td>20</td>
+  <td>NA</td>
+</tr>
+<tr>
+  <td rowspan="2">Update</td>
+  <td>app</td>
+  <td>30</td>
+  <td>NA</td>
+
+  <td rowspan="2">4</td>
+  <td rowspan="2">3</td>
+</tr>
+<tr>
+  <td>rej</td>
+  <td>40</td>
+  <td>NA</td>
+</tr>
+<tr>
+  <td rowspan="2">stats change</td>
+  <td>app</td>
+  <td>50</td>
+  <td>NA</td>
+
+  <td rowspan="2">6</td>
+  <td rowspan="2">5</td>
+</tr>
+<tr>
+  <td>rej</td>
+  <td>60</td>
+  <td>NA</td>
+</tr>
+<tr>
+  <td rowspan="2">hierarchy</td>
+  <td>app</td>
+  <td>NA</td>
+  <td>30</td>
+
+  <td rowspan="2">4</td>
+  <td rowspan="2">6</td>
+</tr>
+<tr>
+  <td>rej</td>
+  <td>NA</td>
+  <td>20</td>
+</tr>
+
+</table>

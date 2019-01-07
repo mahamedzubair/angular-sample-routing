@@ -1,0 +1,39 @@
+<div class="main-container">
+  <header>
+    <div class="header-content" id="example">
+      <p><strong>IMAP Customers Dashboard</strong>&nbsp; <i>as of</i>&nbsp; 20/12/2018</p>
+    </div>
+  </header>
+  <div class="option-selector container">
+    <section class="container">
+      <p class="hover">Click on the Icon to filter by Group : </p>
+      <div class="group-icon-container hover fltrGrp">
+        <figure class="round-border" routerLink="/task" routerLinkActive="active">
+          <i class="fa fa-tasks text"></i>
+          <figcaption>Task</figcaption>
+        </figure>
+        <figure class="round-border" routerLink="/in-process-queue" routerLinkActive="active">
+          <i class="fas fa-map-marker-alt text"></i>
+          <figcaption>Inprocess-Queue</figcaption>
+        </figure>
+        <figure class="round-border" routerLink="/imap-portal" routerLinkActive="active">
+          <i class="fas fa-user-alt text"></i>
+          <figcaption>Imap Portal</figcaption>
+        </figure>
+        <figure class="round-border" routerLink="/account" routerLinkActive="active">
+          <i class="fas fa-user-shield text"></i>
+          <figcaption>Account</figcaption>
+        </figure>
+        <figure class="round-border" routerLink="/ucid" routerLinkActive="active">
+          <i class="fa fa-id-card text"></i>
+          <figcaption>UCID</figcaption>
+        </figure>
+        <figure class="round-border" routerLink="/jboss-jmx" routerLinkActive="active">
+          <i class="fa fa-server text"></i>
+          <figcaption>JBOSS/JMX</figcaption>
+        </figure>
+      </div>
+    </section>
+    <br/>
+  <router-outlet></router-outlet>
+</div>

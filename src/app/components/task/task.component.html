@@ -1,0 +1,71 @@
+<div>
+<section class="container hover">
+      <div id="metricDrop">
+        <label>Select the Metric from Dropdown :</label>
+        <select class="kiran2">
+      <option value="all">(ALL)</option>
+      <option value="ad_delivery">Manual Task in DS Queue</option>
+      <option value="product_delivery">Auto Approved Task by Source</option>
+      <option value="ad_delivery">Manually Approved/Rejected Taks by DS</option>
+      <option value="ad_delivery">linkage in Process(calc_Affinity/Services_Affinity)</option>
+      <option value="ad_delivery">GU & DU changes in process(Relacc_Ultimate)</option>
+      <option value="ad_delivery">APID backlog in the queue-batch only</option>
+      <option value="ad_delivery">Number of searches</option>
+      <option value="ad_delivery">Number of create request by day/month/week</option>
+      <option value="ad_delivery">Number of update request by day/month/week</option>
+      <option value="ad_delivery">Number of Rejects request by day/month/week</option>
+      <option value="ad_delivery">APID by day/month/week-realtime vs batch</option>
+      <option value="ad_delivery">Number of APIDs with site Duns changes</option>
+      <option value="ad_delivery">UCID Creates by source day/month/week</option>
+      <option value="ad_delivery">UCID Rejections by source day/month/week</option>
+      <option value="ad_delivery">UCID Replacements by source day/month/week</option>
+      <option value="ad_delivery">AID processed in iMAP by day/month/week</option>
+      <option value="ad_delivery">% OF Account taht have a UCID linked</option>
+      <option value="ad_delivery">% of UCIDs that are linked to a APID</option>
+      <option value="ad_delivery">Number of UCIDs with GU Changes</option>
+      <option value="ad_delivery">Number of UCIDs with site Duns Changes</option>
+      <option value="ad_delivery">Number of DB Connections</option>
+      <option value="ad_delivery">Number of times idle DB Connections are being Flushed</option>
+      <option value="ad_delivery">Number of EJB Connections</option>
+      </select>
+      </div>
+    </section>
+  </div>
+
+
+  <table>
+    <colgroup>
+      <col width="500" />
+      <col width="500" />
+      <col width="500" />
+      <col width="500" />
+      <col width="500" />
+    </colgroup>
+    <tr class="yellow-bg">
+      <td *ngFor="let list of header">
+        {{list}}
+      </td>
+    </tr>
+    <tr *ngFor="let dataList of data.TASK_KPI">
+      <td *ngFor="let cols of header; let i =  index" 
+        [ngClass]="{'childList': !colIndexList(i)}">
+        
+        <span *ngIf="colIndexList(i); else elseTemplate">
+          {{dataList[cols]}}
+        </span> 
+        <ng-template #elseTemplate>
+          <table class="child-table">
+            <tr *ngFor="let type of dataList.TYPES">
+              <td >
+                {{i === 1 ? getKeyObject(type)[0] : type[getKeyObject(type)[0]][cols]}}
+              </td>
+
+            </tr>
+
+          </table>
+        </ng-template>
+      </td>
+      <br/>
+    </tr>
+
+  </table>
