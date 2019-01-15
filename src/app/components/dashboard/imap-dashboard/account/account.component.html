@@ -1,8 +1,8 @@
 <div>
-<section class="container hover">
-      <div id="metricDrop">
-        <label>Select the Metric from Dropdown :</label>
-        <select class="kiran2">
+  <section class="container">
+    <div id="metricDrop">
+      <label>Account Dropdown</label>
+      <select class="kiran2">
       <option value="all">(ALL)</option>
       <option value="ad_delivery">Manual Task in DS Queue</option>
       <option value="product_delivery">Auto Approved Task by Source</option>
@@ -28,44 +28,44 @@
       <option value="ad_delivery">Number of times idle DB Connections are being Flushed</option>
       <option value="ad_delivery">Number of EJB Connections</option>
       </select>
-      </div>
-    </section>
-  </div>
-
-
+    </div>
+  </section>
   <table>
-    <colgroup>
-      <col width="500" />
-      <col width="500" />
-      <col width="500" />
-      <col width="500" />
-      <col width="500" />
-    </colgroup>
-    <tr class="yellow-bg">
-      <td *ngFor="let list of header">
-        {{list}}
-      </td>
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
     </tr>
-    <tr *ngFor="let dataList of data.TASK_KPI">
-      <td *ngFor="let cols of header; let i =  index" 
-        [ngClass]="{'childList': !colIndexList(i)}">
-        
-        <span *ngIf="colIndexList(i); else elseTemplate">
-          {{dataList[cols]}}
-        </span> 
-        <ng-template #elseTemplate>
-          <table class="child-table">
-            <tr *ngFor="let type of dataList.TYPES">
-              <td >
-                {{i === 1 ? getKeyObject(type)[0] : type[getKeyObject(type)[0]][cols]}}
-              </td>
-
-            </tr>
-
-          </table>
-        </ng-template>
-      </td>
-      <br/>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
     </tr>
-
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+    <tr>
+      <td>Ernst Handel</td>
+      <td>Roland Mendel</td>
+      <td>Austria</td>
+    </tr>
+    <tr>
+      <td>Island Trading</td>
+      <td>Helen Bennett</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td>Laughing Bacchus Winecellars</td>
+      <td>Yoshi Tannamuri</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td>Magazzini Alimentari Riuniti</td>
+      <td>Giovanni Rovelli</td>
+      <td>Italy</td>
+    </tr>
   </table>
+
+</div>

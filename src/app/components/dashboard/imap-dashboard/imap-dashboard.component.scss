@@ -1,0 +1,45 @@
+.imap-dashboard-container {
+    .dashboard-details {
+        display: flex;
+        align-items: center;
+        mat-card {
+            margin: 0px;
+            padding: 2px 10px;
+            background-color: #ffffc9;
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 0px;
+            align-items: center;
+            flex: 1;
+        }
+    }
+    padding: 15px; 
+    .search-btn{
+        line-height: 30px;
+        padding: 0px 40px;
+        background: #ededed;
+    }
+    .dashboard-box {
+        display: flex;
+        mat-card {
+            flex: 1;
+            margin-right: 10px;
+            color: #ffffff;
+            margin-bottom: 15px;
+            border-radius: 0px;
+            margin-left: 0px;
+        }
+        mat-card.orange-bg {
+            background-color: #f0ac00;
+        }
+        mat-card.purple-bg {
+            background-color: #42adad;
+        }
+        mat-card.blue-bg {
+            background-color: #007db8;
+        }
+    }
+}
+.filter-selection {
+    display: flex;
+}

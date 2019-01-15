@@ -1,12 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif !important;
+}
+/* text color sytles*/
+.text-primary {
+    color: #007bff!important;
+}
+.text-muted {
+    color: #6c757d!important;
+}
+.text-success {
+    color: #28a745!important;
+}
+.text-info {
+    color: #17a2b8!important;
+}
+.text-warning {
+    color: #ffc107!important;
+}
+.text-danger {
+    color: #dc3545!important;
+}
+.text-secondary {
+    color: #6c757d!important;
+}
+.text-dark {
+    color: #343a40!important;
+}
+.text-light {
+    color: #f8f9fa!important;
+}
+.text-white {
+    color: #fff!important;
+}
+
+
  .container{
-  padding:0 100px;
+  padding:0 30px;
   box-sizing: border-box;
 }
 
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+.clearfix {
+  clear: both;
+}
+.margin-left10 {
+  margin-left: 10px !important;
+}
+.margin-btm15 {
+ margin-bottom: 15px; 
+}
+
 header{
-  background-color: #272626;
-  padding: 15px;
+  background-color: #007db8;
+  padding: 5px 10px;
 
 }
 
@@ -289,7 +345,7 @@ header{
   width:120px;
 }   
 table, th, td {
-  border: 4px solid black;
+  border: 1px solid #cccccc;
   border-collapse: collapse;
   font-family: Arial;
 }
@@ -316,5 +372,52 @@ th, td {
 
   }
   .child-table tr:not(:last-child) {
-      border-bottom: 4px solid black;
+      border-bottom: 1px solid #cccccc;
   }
+  .flex-layout {
+    display: flex;
+    align-items: center;
+  }
+  .mat-tab-label {
+    flex: 1;
+    border: 1px solid #cccccc;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+  }
+  .mat-tab-label.mat-tab-label-active {
+    background: transparent !important;
+    border: 0px;
+
+  }
+  .mat-tab-header, .mat-tab-nav-bar {
+    border-bottom: 0px;
+  }
+  .mat-ink-bar {
+    top: 10px !important;
+  }
+.mat-form-field  {
+  font-family: 400 13px/20px 'Montserrat', sans-serif  !important;
+}
+.mat-expansion-panel-header, .mat-tab-group, .mat-card, .mat-form-field, .mat-select {
+  font-family: 'Montserrat', sans-serif !important; 
+  font-size: 13px; 
+}
+.custom-dropdown {
+    display: inline-block;
+    width: 100%;
+    height: calc(1.75rem + 2px);
+    padding: .150rem 1.75rem .150rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    background-color: #ededed;
+    background-size: 8px 10px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}

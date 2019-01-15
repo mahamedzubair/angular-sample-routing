@@ -1,0 +1,66 @@
+<div class="imap-dashboard-container">
+  <div class="dashboard-details">
+    <mat-card>
+      <mat-icon>info</mat-icon>
+      Dashboard as of <span class="text-info">30/11/2018</span>
+      Last Refreshed Date <span class="text-info">12/04/2018</span>
+    </mat-card>
+  </div>
+  <mat-card class="margin-btm15">
+    Filer Options
+    <div class="filter-selection">
+      <select class="custom-dropdown">
+        <option>Region</option>
+        <option>Bangalore</option>
+        <option>Bangalore</option>
+      </select>
+      <select class="custom-dropdown margin-left10">
+        <option>Country</option>
+        <option>India</option>
+        <option>US</option>
+      </select>
+      <button mat-raised-button class="margin-left10 search-btn">Search</button>
+
+    </div>
+  </mat-card>
+  <div class="dashboard-box">
+    <mat-card class="orange-bg">
+      <h3>8,751</h3>
+      Total Customers
+      <br/>
+      (UCID & Affinity Account)
+    </mat-card>
+    <mat-card class="purple-bg">
+      <h3>5,567</h3>
+      Number of <br/> UCID
+    </mat-card>
+    <mat-card class="blue-bg">
+      <h3>3,007</h3>
+      Number of Affinity <br/> Accounts
+    </mat-card>
+  </div>
+  <mat-card>
+    Filter by Group
+    <mat-tab-group [selectedIndex]="0">
+      <mat-tab label="Task">
+        <app-task></app-task>
+      </mat-tab>
+      <mat-tab label="In process Queue"> 
+        <app-inprocess-queue></app-inprocess-queue>
+      </mat-tab>
+      <mat-tab label="Imap Portal"> 
+        <app-imap-portal></app-imap-portal>
+      </mat-tab>
+      <mat-tab label="Account"> 
+        <app-account></app-account>
+      </mat-tab>
+      <mat-tab label="UCID"> 
+        <app-ucid></app-ucid>
+      </mat-tab>
+      <mat-tab label="JBOSS/JMX"> 
+        <app-jboss-jmx></app-jboss-jmx>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+
+</div>

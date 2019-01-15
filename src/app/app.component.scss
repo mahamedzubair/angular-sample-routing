@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    align-items: center;
+    .logo {
+        color: white;
+        label {
+            margin-left: 10px;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        flex: 1;
+    }
+    .user {
+        flex: 1;
+        align-items: center;
+        color: #ffffff;
+        text-align: right;
+        label {
+          display: inline-block;
+        }
+        mat-icon {
+            display: inline-block;
+            margin-top: 5px;
+            margin-left: -20px;  
+            
+        }
+    }
+    
+}
+.container {
+    .breadcrumb {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;;
+    }
+}
+footer {
+    background-color: #007db8;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
