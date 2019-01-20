@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService} from './../../../../services/data/data.service'
+import { DataService } from './../../../../services/data/data.service'
 
 @Component({
   selector: 'app-account',
@@ -7,18 +7,32 @@ import { DataService} from './../../../../services/data/data.service'
   styleUrls: ['./account.component.scss']
 })
 export class AccountComponent implements OnInit {
-  header: string[];
+  header: any[];
   data: any = [];
   title = 'sample';
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.dataService.getData().pipe().subscribe(res => {
-      this.header = Object.keys(res.TASK_KPI[0]);
-      this.header.splice(this.header.indexOf("TYPES"), 1);
-      let childHeaders = Object.keys(res.TASK_KPI[0].TYPES[0].APPROVE);
-      this.header.splice(1, 0, "");
-      this.header.splice(2, 0, ...childHeaders);
+      this.header = [{
+        key: 'taskType', label: 'TASKS',
+
+      }, {
+        key: 'taskType', label: 'TASKS',
+
+      }, {
+        key: 'frequency', label: 'FREQUENCY',
+
+      }, {
+        key: 'total', label: 'TOTAL',
+
+      }, {
+        key: 'slaMissed', label: 'SLA_MISSES_NO',
+
+      }, {
+        key: 'slaMet', label: 'SLA_MISSED_PER',
+
+      }];
       this.data = res;
     });
   }

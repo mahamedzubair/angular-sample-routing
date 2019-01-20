@@ -1,80 +1,98 @@
-{
-    "TASK_KPI": [
-        {
-            "TASK": "Create",
-            "TYPES": [
-                {
-                    "APPROVE": {
-                        "4HR": "5",
-                        "48HR": "NA"
-                    }
-                },
-                {
-                    "REJECT": {
-                        "4HR": "5",
-                        "48HR": "NA"
-                    }
-                }
-            ],
-            "SLA_MISSED_NO": "10",
-            "SLA_MISSED_PER": "5"
-        },
-        {
-            "TASK": "Update",
-            "TYPES": [
-                {
-                    "APPROVE": {
-                        "4HR": "5",
-                        "48HR": "NA"
-                    }
-                },
-                {
-                    "REJECT": {
-                        "4HR": "5",
-                        "48HR": "NA"
-                    }
-                }
-            ],
-            "SLA_MISSED_NO": "10",
-            "SLA_MISSED_PER": "5"
-        },
-        {
-            "TASK": "Status Change",
-            "TYPES": [
-                {
-                    "APPROVE": {
-                        "4HR": "5",
-                        "48HR": "NA"
-                    }
-                },
-                {
-                    "REJECT": {
-                        "4HR": "5",
-                        "48HR": "NA"
-                    }
-                }
-            ],
-            "SLA_MISSED_NO": "10",
-            "SLA_MISSED_PER": "5"
-        },
-        {
-            "TASK": "Hierarchy",
-            "TYPES": [
-                {
-                    "APPROVE": {
-                        "4HR": "NA",
-                        "48HR": "10"
-                    }
-                },
-                {
-                    "REJECT": {
-                        "4HR": "NA",
-                        "48HR": "20"
-                    }
-                }
-            ],
-            "SLA_MISSED_NO": "10",
-            "SLA_MISSED_PER": "5"
-        }
-    ]
-}
+[
+    {
+        "taskType": "CREATE",
+        "status": "PENDING",
+        "frequency": "4HR",
+        "total": 28,
+        "slaMissed": 2,
+        "slaMet": 26
+    },
+    {
+        "taskType": "CREATE",
+        "status": "PENDING",
+        "frequency": "DAILY",
+        "total": 28,
+        "slaMissed": 2,
+        "slaMet": 26
+    },
+    {
+        "taskType": "CREATE",
+        "status": "PENDING",
+        "frequency": "MONTHLY",
+        "total": 28,
+        "slaMissed": 2,
+        "slaMet": 26
+    },
+    {
+        "taskType": "HIERARCHY",
+        "status": "PENDING",
+        "frequency": "4HR",
+        "total": 10,
+        "slaMissed": 0,
+        "slaMet": 10
+    },
+    {
+        "taskType": "HIERARCHY",
+        "status": "PENDING",
+        "frequency": "DAILY",
+        "total": 10,
+        "slaMissed": 0,
+        "slaMet": 10
+    },
+    {
+        "taskType": "HIERARCHY",
+        "status": "PENDING",
+        "frequency": "MONTHLY",
+        "total": 10,
+        "slaMissed": 0,
+        "slaMet": 10
+    },
+    {
+        "taskType": "STATUS CHANGE",
+        "status": "PENDING",
+        "frequency": "4HR",
+        "total": 39,
+        "slaMissed": 0,
+        "slaMet": 39
+    },
+    {
+        "taskType": "STATUS CHANGE",
+        "status": "PENDING",
+        "frequency": "DAILY",
+        "total": 39,
+        "slaMissed": 0,
+        "slaMet": 39
+    },
+    {
+        "taskType": "STATUS CHANGE",
+        "status": "PENDING",
+        "frequency": "MONTHLY",
+        "total": 39,
+        "slaMissed": 0,
+        "slaMet": 39
+    },
+    {
+        "taskType": "UPDATE",
+        "status": "PENDING",
+        "frequency": "4HR",
+        "total": 2,
+        "slaMissed": 0,
+        "slaMet": 2
+    },
+    {
+        "taskType": "UPDATE",
+        "status": "PENDING",
+        "frequency": "DAILY",
+        "total": 2,
+        "slaMissed": 0,
+        "slaMet": 2
+    },
+    {
+        "taskType": "UPDATE",
+        "status": "PENDING",
+        "frequency": "MONTHLY",
+        "total": 3,
+        "slaMissed": 0,
+        "slaMet": 3
+    }
+]

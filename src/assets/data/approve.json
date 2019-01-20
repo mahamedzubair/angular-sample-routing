@@ -1,0 +1,26 @@
+[
+    {
+        "processType": "AUTO-APPROVE",
+        "requestorGroup": "AFFINITY/GAMA",
+        "frequency": "HOURLY",
+        "total": 484,
+        "totalSuccess": 482,
+        "totalFailure": 2
+    },
+    {
+        "processType": "AUTO-APPROVE",
+        "requestorGroup": "CDCC",
+        "frequency": "HOURLY",
+        "total": 28,
+        "totalSuccess": 28,
+        "totalFailure": 0
+    },
+    {
+        "processType": "REPLACE_UCID",
+        "requestorGroup": "CDCC",
+        "frequency": "HOURLY",
+        "total": 12,
+        "totalSuccess": 12,
+        "totalFailure": 0
+    }
+]

@@ -9,8 +9,9 @@ import { ApiService } from '../api.service';
 
 export class DataService {
     constructor(private api: ApiService) { }
-    getData(): Observable<any> {
-        return this.api.get("./assets/data/data.json").pipe(response => response);
+    getData(query?): Observable<any> {
+        let url = `http://ecpappdev03:8080/ImapDashboardService/tasks/${query}`
+        return this.api.get(url).pipe(response => response);
     }
 
 }
